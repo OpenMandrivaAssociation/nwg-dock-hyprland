@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:           nwg-dock-hyprland
 Version:        0.3.2
 Release:        1
@@ -25,13 +27,12 @@ client buttons and the launcher button.
 %autosetup -p1 -a1
 
 %build
-#export GOPATH=$(pwd)/.godeps:$(pwd)/gopath
+export GOPATH=$(pwd)/.godeps:$(pwd)/gopath
 ## Note build takes around 10 minutes, so be patient as there is no output!
-go build \
-   -mod=vendor \
-   -buildmode=pie
+go build
 
 %install
+export GOPATH=$(pwd)/.godeps:$(pwd)/gopath
 install -d -m 0755 %{buildroot}%{_bindir} %{buildroot}%{_datadir}/%{name}
 install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
 install -m 0644 config/style.css %{buildroot}%{_datadir}/%{name}/style.css
