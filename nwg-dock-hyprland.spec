@@ -1,3 +1,5 @@
+%undefine _debugsource_packages
+
 Name:           nwg-dock-hyprland
 Version:        0.3.2
 Release:        1
