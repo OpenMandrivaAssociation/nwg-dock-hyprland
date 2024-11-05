@@ -6,7 +6,7 @@ License:        MIT
 Group:          NWG/Hyrpland
 URL:            https://github.com/nwg-piotr/nwg-dock-hyprland
 Source0:        https://github.com/nwg-piotr/nwg-dock-hyprland/tar.gz/refs/tags/v%{version}#/%{name}-%{version}.tar.gz
-Source1:        vendor.tar.zst
+Source1:        vendor.tar.xz
 BuildRequires:  go >= 1.22
 BuildRequires:  compiler(go-compiler)
 BuildRequires:  zstd
