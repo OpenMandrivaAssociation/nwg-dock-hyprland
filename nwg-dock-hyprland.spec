@@ -17,6 +17,7 @@ BuildRequires:  golang
 BuildRequires:  compiler(go-compiler)
 BuildRequires:  zstd
 BuildRequires:  pkgconfig(gtk-layer-shell-0)
+BuildRequires:  pkgconfig(gobject-introspection-1.0)
 
 %description
 Configurable (w/ command line arguments and css) dock, written in Go, aimed
