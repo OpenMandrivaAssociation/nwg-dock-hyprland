@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:           nwg-dock-hyprland
-Version:        0.3.3
+Version:        0.4.0
 Release:        1
 Summary:        Hyprland application dock
 License:        MIT
